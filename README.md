@@ -1,7 +1,17 @@
 Design Pattern
 
-In this project, it contains:
-- Definition, In the package of each design pattern README.md
-- Implement, Under design pattern package 
-- Unit test, Under the test folder 
-- UML class diagram, Under design pattern package
+原则
+- 单一职责原则，就一个类而言，应该仅有一个引起它变化的原因
+- 开放-封闭原则，软件实体（类、模块、函数等等）可以扩展，但是不可以修改
+- 依赖倒转原则，高层模块不应该依赖低层模块，都应该依赖抽象。抽象不应该依赖细节，细节应该依赖抽象
+- 里氏代换原则，子类必须能替换掉它们的父类型
+
+简单工厂模式（Simple Factory）
+
+工厂方法模式（Factory Method）
+
+抽象工厂模式(Abstract Factory)
+
+策略模式(Strategy): 它定义了算法家族，分别封装起来，让它们之间可以相互替换，此模式让算法的变化，不会影响到使用算法的客户。
+
+装饰模式（Decorator）,动态地给一个对象添加一些额外的职责，就增加功能来说，装饰模式比生成子类更为灵活
