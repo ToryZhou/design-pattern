@@ -26,7 +26,8 @@ public class PrototypeTest {
         Resume resumeDeepClone = resume.deepClone();
         Resume resumeClonedNew = resume.clone();
 
-        resumeCloned.setWorkExperience("2021-2023", blockChainWorker);
+        resumeCloned.setPersonalInfo("Female",27);
+        resumeDeepClone.setWorkExperience("2021-2023", blockChainWorker);
 
         Prize prize = resumeCloned.getPrize();
         prize.setName(theNobelPrizeName);
@@ -38,8 +39,11 @@ public class PrototypeTest {
 
         resumeClonedNew.setPrize(new Prize(awsAwardName));
 
-        Assert.assertEquals(internetWorker, resume.getCompany());
-        Assert.assertEquals(blockChainWorker, resumeCloned.getCompany());
+        Assert.assertEquals("Male", resume.getSex());
+        Assert.assertEquals("Female", resumeCloned.getSex());
+
+        Assert.assertEquals(internetWorker, resume.getWorkExperience().getCompany());
+        Assert.assertEquals(blockChainWorker, resumeDeepClone.getWorkExperience().getCompany());
 
         //原对象受浅拷贝对象引的影响
         Assert.assertEquals(theNobelPrizeName, resume.getPrize().getName());

@@ -11,14 +11,14 @@ public class Resume implements Cloneable {
     //值类型在clone时会复制到新对象
     private int age;
 
-    private String timeArea;
-    private String company;
+    private WorkExperience workExperience;
 
     //引用类型会浅拷贝，拷贝时引用的还是同一个对象，要深拷贝需要一层一层拷贝
     private Prize prize;
 
     public Resume(String name) {
         this.name = name;
+        this.workExperience = new WorkExperience();
     }
 
     public void setPersonalInfo(String sex, int age) {
@@ -27,8 +27,8 @@ public class Resume implements Cloneable {
     }
 
     public void setWorkExperience(String timeArea, String company) {
-        this.timeArea = timeArea;
-        this.company = company;
+        this.workExperience.setTimeArea(timeArea);
+        this.workExperience.setCompany(company);
     }
 
     @Override
@@ -38,6 +38,7 @@ public class Resume implements Cloneable {
 
     public Resume deepClone() throws CloneNotSupportedException {
         Resume resume = (Resume) super.clone();
+        resume.workExperience = workExperience.clone();
         resume.prize = prize.clone();
         return resume;
     }
