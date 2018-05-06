@@ -6,10 +6,11 @@ import lombok.Data;
 public class Resume implements Cloneable {
 
     private String name;
+    //String 是特殊的引用类型会进行深拷贝
     private String sex;
     //值类型在clone时会复制到新对象
     private int age;
-    //String 是特殊的引用类型会进行深拷贝
+
     private String timeArea;
     private String company;
 
