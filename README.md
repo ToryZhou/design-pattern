@@ -36,6 +36,9 @@
 * [建造者模式(Builder)](https://github.com/ToryZhou/design-pattern/tree/master/src/main/java/com/job/designpattern/builder), 
 又叫生成器模式，将一个复杂对象的构建与它的表示分离，使得同样的构建过程可以创建不同的表示。
 
+* [观察者模式(Observer)](https://github.com/ToryZhou/design-pattern/tree/master/src/main/java/com/job/designpattern/observer), 
+又叫发布-订阅模式(Publish/Subscribe), 定义了一种一对多的依赖关系，让多个观察者对象同时监听某一个主题对象。这个主题对象在状态发生变化时，会通知所有观察者对象，使它们能够自动更新自己。
+
 ```
 说明：UML类图使用 Idea PlantUML plugin
 ```
