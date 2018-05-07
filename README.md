@@ -10,7 +10,6 @@
 ##### 设计模式种类
 * [简单工厂模式(Simple Factory)](https://github.com/ToryZhou/design-pattern/tree/master/src/main/java/com/job/designpattern/simplefactory)
 
-* 抽象工厂模式(Abstract Factory)
 
 * [策略模式(Strategy)](https://github.com/ToryZhou/design-pattern/tree/master/src/main/java/com/job/designpattern/strategy), 
 它定义了算法家族，分别封装起来，让它们之间可以相互替换，此模式让算法的变化，不会影响到使用算法的客户。
@@ -38,6 +37,9 @@
 
 * [观察者模式(Observer)](https://github.com/ToryZhou/design-pattern/tree/master/src/main/java/com/job/designpattern/observer), 
 又叫发布-订阅模式(Publish/Subscribe), 定义了一种一对多的依赖关系，让多个观察者对象同时监听某一个主题对象。这个主题对象在状态发生变化时，会通知所有观察者对象，使它们能够自动更新自己。
+
+* [抽象工厂模式(Abstract Factory)](https://github.com/ToryZhou/design-pattern/tree/master/src/main/java/com/job/designpattern/abstractfactory), 
+提供一个创建一系列相关或相互依赖对象的接口，而无需指定它们具体的类。
 
 ```
 说明：UML类图使用 Idea PlantUML plugin
