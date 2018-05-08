@@ -41,6 +41,9 @@
 * [抽象工厂模式(Abstract Factory)](https://github.com/ToryZhou/design-pattern/tree/master/src/main/java/com/job/designpattern/abstractfactory), 
 提供一个创建一系列相关或相互依赖对象的接口，而无需指定它们具体的类。
 
+* [状态模式(State)](https://github.com/ToryZhou/design-pattern/tree/master/src/main/java/com/job/designpattern/state), 
+当一个对象的内在状态改变时允许改变其行为，这个对象看起来像是改变了其类。
+
 ```
 说明：UML类图使用 Idea PlantUML plugin
 ```
