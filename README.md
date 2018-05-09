@@ -1,5 +1,7 @@
 ### Design Pattern
 
+[![Join the chat at https://gitter.im/design-p/Lobby](https://badges.gitter.im/design-p/Lobby.svg)](https://gitter.im/design-p/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ##### 原则
 - 单一职责原则，就一个类而言，应该仅有一个引起它变化的原因
 - 开放-封闭原则，软件实体（类、模块、函数等等）可以扩展，但是不可以修改
