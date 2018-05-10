@@ -48,6 +48,9 @@
 
 * [适配器模式(Adapter)](https://github.com/ToryZhou/design-pattern/tree/master/src/main/java/com/job/designpattern/adapter), 
 将一个类的接口转换为客户希望的另外一个接口。Adapter模式使得原本由于接口不兼容而不能一起工作的那些类可以在一起工作。
+
+* [备忘录模式(Memento)](https://github.com/ToryZhou/design-pattern/tree/master/src/main/java/com/job/designpattern/memento), 
+在不破坏封装性的前提下，捕获一个对象的内部状态，并在该对象之外保存这个状态。这样就可将该对象恢复到原先保存的状态。
 ```
 说明：UML类图使用 Idea PlantUML plugin
 ```
