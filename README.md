@@ -51,6 +51,9 @@
 
 * [备忘录模式(Memento)](https://github.com/ToryZhou/design-pattern/tree/master/src/main/java/com/job/designpattern/memento), 
 在不破坏封装性的前提下，捕获一个对象的内部状态，并在该对象之外保存这个状态。这样就可将该对象恢复到原先保存的状态。
+
+* [组合模式(Composite)](https://github.com/ToryZhou/design-pattern/tree/master/src/main/java/com/job/designpattern/composite), 
+将对象组合成树形结构以表示‘部分-整体’的层次结构。组合模式使得用户对单个对象和组合对象的使用具有一致性。
 ```
 说明：UML类图使用 Idea PlantUML plugin
 ```
