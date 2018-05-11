@@ -54,6 +54,9 @@
 
 * [组合模式(Composite)](https://github.com/ToryZhou/design-pattern/tree/master/src/main/java/com/job/designpattern/composite), 
 将对象组合成树形结构以表示‘部分-整体’的层次结构。组合模式使得用户对单个对象和组合对象的使用具有一致性。
+
+* [迭代器模式(Composite)](https://github.com/ToryZhou/design-pattern/tree/master/src/main/java/com/job/designpattern/iterator), 
+提供一种方法顺序访问一个聚合对象中各个元素，而又不暴露该对象的内部表示。
 ```
 说明：UML类图使用 Idea PlantUML plugin
 ```

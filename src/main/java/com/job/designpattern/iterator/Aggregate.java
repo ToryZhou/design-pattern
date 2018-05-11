@@ -1,4 +1,5 @@
 package com.job.designpattern.iterator;
 
-public class Aggregate {
+public abstract class Aggregate {
+    public abstract Iterator createIterator();
 }
