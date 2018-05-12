@@ -57,6 +57,9 @@
 
 * [迭代器模式(Composite)](https://github.com/ToryZhou/design-pattern/tree/master/src/main/java/com/job/designpattern/iterator), 
 提供一种方法顺序访问一个聚合对象中各个元素，而又不暴露该对象的内部表示。
+
+* [单例模式(Singleton)](https://github.com/ToryZhou/design-pattern/tree/master/src/main/java/com/job/designpattern/singleton), 
+保证一个类仅有一个实例，并且提供一个访问它的全局访问点。
 ```
 说明：UML类图使用 Idea PlantUML plugin
 ```
