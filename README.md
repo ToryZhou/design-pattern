@@ -68,6 +68,9 @@
 * [命令模式(Command)](https://github.com/ToryZhou/design-pattern/tree/master/src/main/java/com/job/designpattern/command), 
 将一个请求封装为一个对象，从而使你可用不同的请求对客户进行参数化，对请求排队或记录请求日志，以及支持可撤销的操作。
 
+* [职责链模式(Chain of Responsibility)](https://github.com/ToryZhou/design-pattern/tree/master/src/main/java/com/job/designpattern/chainofresponsibility), 
+使多个对象都有机会处理请求，从而避免请求的发送者和接收者之间的耦合关系。将这个对象连成一条链，并沿着这条链传递该请求，知道有一个对象处理它为止。
+
 ```
 说明：UML类图使用 Idea PlantUML plugin
 ```
