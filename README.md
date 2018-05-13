@@ -71,6 +71,8 @@
 * [职责链模式(Chain of Responsibility)](https://github.com/ToryZhou/design-pattern/tree/master/src/main/java/com/job/designpattern/chainofresponsibility), 
 使多个对象都有机会处理请求，从而避免请求的发送者和接收者之间的耦合关系。将这个对象连成一条链，并沿着这条链传递该请求，知道有一个对象处理它为止。
 
+* [中介者模式(Mediator)](https://github.com/ToryZhou/design-pattern/tree/master/src/main/java/com/job/designpattern/mediator), 
+又叫调停者模式，用一个中介对象来封装一系列的对象交互。中介者使各对象不需要显示地相互作用，从而使其耦合松散，而且可以独立地改变它们之间的交互
 ```
 说明：UML类图使用 Idea PlantUML plugin
 ```
