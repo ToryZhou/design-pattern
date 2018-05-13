@@ -1,10 +1,8 @@
 package com.job.designpattern.composite;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
-
 public class Duty {
     private String companyName;
     private int depth;
