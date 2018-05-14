@@ -78,6 +78,9 @@
 
 23. [解释器模式(Interpreter)](https://github.com/ToryZhou/design-pattern/tree/master/src/main/java/com/job/designpattern/interpreter), 
 给定一个语言，定义它的文法的一种表示，并定义一个解释器，这个解释器使用该表示来解释语言中的句子。
+
+24. [访问者模式(Visitor)](https://github.com/ToryZhou/design-pattern/tree/master/src/main/java/com/job/designpattern/visitor), 
+表示一个作用于某对象结构中的各元素的操作。可以在不改变各元素的类的前提下定义作用于这些元素的新操作。
 ```
 说明：UML类图使用 Idea PlantUML plugin
 ```
