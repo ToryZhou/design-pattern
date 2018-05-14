@@ -75,6 +75,9 @@
 
 22. [亨元模式(Flyweight)](https://github.com/ToryZhou/design-pattern/tree/master/src/main/java/com/job/designpattern/flyweight), 
 运用共享技术有效地支持大量细粒度的对象。
+
+23. [解释器模式(Interpreter)](https://github.com/ToryZhou/design-pattern/tree/master/src/main/java/com/job/designpattern/interpreter), 
+给定一个语言，定义它的文法的一种表示，并定义一个解释器，这个解释器使用该表示来解释语言中的句子。
 ```
 说明：UML类图使用 Idea PlantUML plugin
 ```
