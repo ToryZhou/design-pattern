@@ -8,7 +8,7 @@ public abstract class Operation {
     private double numberA;
     private double numberB;
 
-    public double calc() {
+    public double calculate() {
         return 0.0;
     }
 

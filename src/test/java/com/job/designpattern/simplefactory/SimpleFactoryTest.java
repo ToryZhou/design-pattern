@@ -17,6 +17,6 @@ public class SimpleFactoryTest {
         Operation operation = OperationFactory.createOperation(type);
         operation.setNumberA(numberA);
         operation.setNumberB(numberB);
-        Assert.assertEquals(expected, operation.calc(), 0);
+        Assert.assertEquals(expected, operation.calculate(), 0);
     }
 }

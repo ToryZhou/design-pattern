@@ -1,26 +1,28 @@
 @startuml
-
-abstract class AbstractList
-abstract AbstractCollection
-interface List
-interface Collection
-
-List <|-- AbstractList
-Collection <|-- AbstractCollection
-
-Collection <|- List
-AbstractCollection <|- AbstractList
-AbstractList <|-- ArrayList
-
-class ArrayList {
-Object[] elementData
-size()
+abstract class Operation{
+    +numberA: double
+    +numberB: double
+    +calculate(): double
+}
+class OperationAddition{
+    +calculate(): double
+}
+class OperationSubtraction{
+    +calculate(): double
+}
+class OperationMultiplication{
+   +calculate(): double
+}
+class OperationDivision{
+    +calculate(): double
+}
+class OperationFactory{
+    +createOperation(): Operation
 }
 
-enum TimeUnit {
-DAYS
-HOURS
-MINUTES
-}
-
+Operation <|-- OperationAddition
+Operation <|-- OperationSubtraction
+Operation <|-- OperationMultiplication
+Operation <|-- OperationDivision
+OperationFactory --> Operation: create
 @enduml

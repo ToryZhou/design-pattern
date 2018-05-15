@@ -12,6 +12,7 @@
 
 ##### 设计模式种类
 1. [简单工厂模式(Simple Factory)](https://github.com/ToryZhou/design-pattern/tree/master/src/main/java/com/job/designpattern/simplefactory)
+![Simple Factory](https://github.com/ToryZhou/design-pattern/tree/master/src/main/java/com/job/designpattern/simplefactory/OperationUml.png)
 
 2. [策略模式(Strategy)](https://github.com/ToryZhou/design-pattern/tree/master/src/main/java/com/job/designpattern/strategy), 
 它定义了算法家族，分别封装起来，让它们之间可以相互替换，此模式让算法的变化，不会影响到使用算法的客户。
