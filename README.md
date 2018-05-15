@@ -83,5 +83,8 @@
 24. [访问者模式(Visitor)](https://github.com/ToryZhou/design-pattern/tree/master/src/main/java/com/job/designpattern/visitor), 
 表示一个作用于某对象结构中的各元素的操作。可以在不改变各元素的类的前提下定义作用于这些元素的新操作。
 ```
-说明：UML类图使用 Idea PlantUML plugin
+说明：
+UML类图使用 Idea PlantUML plugin
+同时需要下载安装 [graphviz](https://graphviz.gitlab.io/download/)
+需要安装graphviz到默认目录 [参考说明](http://plantuml.com/graphviz-dot)
 ```
