@@ -1,26 +1,30 @@
 @startuml
-
-abstract class AbstractList
-abstract AbstractCollection
-interface List
-interface Collection
-
-List <|-- AbstractList
-Collection <|-- AbstractCollection
-
-Collection <|- List
-AbstractCollection <|- AbstractList
-AbstractList <|-- ArrayList
-
-class ArrayList {
-Object[] elementData
-size()
+Title Strategy
+abstract class CashSuper{
+    +acceptCash(): double
 }
 
-enum TimeUnit {
-DAYS
-HOURS
-MINUTES
+class CashNormal{
+    +acceptCash(): double
+}
+class CashRebate{
+    -moneyRebate: double
+    +acceptCash(): double
+}
+class CashReturn{
+    -moneyCondition: double
+    -moneyReturn: double
+    +acceptCash(): double
 }
 
+class CashContext{
+    -cashSuper: CashSuper
+    +getResult(): double
+}
+
+CashSuper <|-- CashNormal
+CashSuper <|-- CashRebate
+CashSuper <|-- CashReturn
+
+CashContext o--> CashSuper
 @enduml

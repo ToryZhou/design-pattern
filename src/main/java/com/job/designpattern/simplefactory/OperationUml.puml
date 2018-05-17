@@ -1,7 +1,9 @@
+
 @startuml
+title Simple Factory
 abstract class Operation{
-    +numberA: double
-    +numberB: double
+    -numberA: double
+    -numberB: double
     +calculate(): double
 }
 class OperationAddition{
