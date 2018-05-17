@@ -2,6 +2,12 @@
 
 [![Join the chat at https://gitter.im/design-p/Lobby](https://badges.gitter.im/design-p/Lobby.svg)](https://gitter.im/design-p/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
+##### 该项目包含了所列举的设计模式
+* [代码实现](https://github.com/ToryZhou/design-pattern/tree/master/src/main/java/com/job/designpattern) 
+* [类图源文件](https://github.com/ToryZhou/design-pattern/tree/master/src/main/java/com/job/designpattern)
+* [单元测试](https://github.com/ToryZhou/design-pattern/tree/master/src/test/java/com/job/designpattern)
+
 ##### 原则
 - 单一职责原则，就一个类而言，应该仅有一个引起它变化的原因
 - 开放-封闭原则，软件实体（类、模块、函数等等）可以扩展，但是不可以修改
