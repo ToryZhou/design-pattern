@@ -16,10 +16,11 @@
 
 2. [策略模式(Strategy)](https://github.com/ToryZhou/design-pattern/tree/master/src/main/java/com/job/designpattern/strategy), 
 它定义了算法家族，分别封装起来，让它们之间可以相互替换，此模式让算法的变化，不会影响到使用算法的客户。  
-![Simple Factory](https://github.com/ToryZhou/design-pattern/raw/master/src/main/java/com/job/designpattern/simplefactory/CashUml.png)
+![Strategy](https://github.com/ToryZhou/design-pattern/raw/master/src/main/java/com/job/designpattern/strategy/CashUml.png)
 
 3. [装饰模式(Decorator)](https://github.com/ToryZhou/design-pattern/tree/master/src/main/java/com/job/designpattern/decorator), 
-动态地给一个对象添加一些额外的职责，就增加功能来说，装饰模式比生成子类更为灵活。
+动态地给一个对象添加一些额外的职责，就增加功能来说，装饰模式比生成子类更为灵活。  
+![Decorator](https://github.com/ToryZhou/design-pattern/raw/master/src/main/java/com/job/designpattern/decorator/DecoratorUml.png)
 
 4. [代理模式(Proxy)](https://github.com/ToryZhou/design-pattern/tree/master/src/main/java/com/job/designpattern/proxy), 
 为其他对象提供一种代理以控制对这个对象的访问。

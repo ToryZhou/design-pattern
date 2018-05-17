@@ -1,26 +1,44 @@
 @startuml
 
-abstract class AbstractList
-abstract AbstractCollection
-interface List
-interface Collection
+title Decorator
 
-List <|-- AbstractList
-Collection <|-- AbstractCollection
-
-Collection <|- List
-AbstractCollection <|- AbstractList
-AbstractList <|-- ArrayList
-
-class ArrayList {
-Object[] elementData
-size()
+class Person{
+    -name:String
+    +putOn()
+}
+class Finery{
+    #person: Person
+    +putOn()
+}
+class BigTrouser{
+    +putOn()
+}
+class LeatherShoes{
+    +putOn()
+}
+class Sneakers{
+    +putOn()
+}
+class Suit{
+    +putOn()
+}
+class Tie{
+    +putOn()
+}
+class TShirts{
+    +putOn()
 }
 
-enum TimeUnit {
-DAYS
-HOURS
-MINUTES
-}
+
+Person <|-- Finery
+Finery o--> Person
+
+Finery <|-- BigTrouser
+Finery <|-- LeatherShoes
+Finery <|-- Sneakers
+Finery <|-- Suit
+Finery <|-- Tie
+Finery <|-- TShirts
+
 
 @enduml
