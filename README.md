@@ -29,10 +29,12 @@
 ![Decorator](https://github.com/ToryZhou/design-pattern/raw/master/src/main/java/com/job/designpattern/decorator/DecoratorUml.png)
 
 4. [代理模式(Proxy)](https://github.com/ToryZhou/design-pattern/tree/master/src/main/java/com/job/designpattern/proxy), 
-为其他对象提供一种代理以控制对这个对象的访问。
+为其他对象提供一种代理以控制对这个对象的访问。  
+![Proxy](https://github.com/ToryZhou/design-pattern/raw/master/src/main/java/com/job/designpattern/proxy/ProxyUml.png)
 
 5. [工厂方法模式(Factory Method)](https://github.com/ToryZhou/design-pattern/tree/master/src/main/java/com/job/designpattern/factorymethod), 
-定义一个用于创建对象的接口，让子类决定实例化哪一个类。工厂方法使一个类的实例化延迟到它的子类。
+定义一个用于创建对象的接口，让子类决定实例化哪一个类。工厂方法使一个类的实例化延迟到它的子类。  
+![Factory Method](https://github.com/ToryZhou/design-pattern/raw/master/src/main/java/com/job/designpattern/factorymethod/FactoryMethodUml.png)
 
 6. [原型模式(Prototype)](https://github.com/ToryZhou/design-pattern/tree/master/src/main/java/com/job/designpattern/prototype), 
 用原型实例指定创建对象的种类，并且通过拷贝这些原型创建新的对象。

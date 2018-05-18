@@ -1,0 +1,23 @@
+@startuml
+title Proxy
+Interface GiveGift{
+    +giveDolls()
+    +giveFlowers()
+    +giveChocolate()
+}
+class Pursuit{
+    +giveDolls()
+    +giveFlowers()
+    +giveChocolate()
+}
+class Proxy{
+    -pursuit:Pursuit
+    +giveDolls()
+    +giveFlowers()
+    +giveChocolate()
+}
+
+GiveGift <|.. Proxy
+GiveGift <|.. Pursuit
+Proxy -> Pursuit
+@enduml

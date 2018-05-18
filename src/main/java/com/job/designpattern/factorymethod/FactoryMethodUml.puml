@@ -1,0 +1,19 @@
+@startuml
+title Factory Method
+interface IFactory{
+    +createLeiFeng(): LeiFeng
+}
+Class LeiFeng
+Class Undergraduate
+Class UndergraduateFactory
+Class Volunteer
+Class VolunteerFactory
+
+IFactory <|.. UndergraduateFactory
+IFactory ..> LeiFeng
+IFactory <|.. VolunteerFactory
+LeiFeng <|-- Undergraduate
+LeiFeng <|-- Volunteer
+UndergraduateFactory ..> Undergraduate
+VolunteerFactory..> Volunteer
+@enduml
