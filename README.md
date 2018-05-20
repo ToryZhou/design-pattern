@@ -37,7 +37,8 @@
 ![Factory Method](https://github.com/ToryZhou/design-pattern/raw/master/src/main/java/com/job/designpattern/factorymethod/FactoryMethodUml.png)
 
 6. [原型模式(Prototype)](https://github.com/ToryZhou/design-pattern/tree/master/src/main/java/com/job/designpattern/prototype), 
-用原型实例指定创建对象的种类，并且通过拷贝这些原型创建新的对象。
+用原型实例指定创建对象的种类，并且通过拷贝这些原型创建新的对象。  
+![Prototype](https://github.com/ToryZhou/design-pattern/raw/master/src/main/java/com/job/designpattern/prototype/PrototypeUml.png)
 
 7. [模板方法模式(Template Method)](https://github.com/ToryZhou/design-pattern/tree/master/src/main/java/com/job/designpattern/templatemethod), 
 定义一个操作中的算法骨架，而将一些步骤延迟到子类中。模板方法使得子类可以不改变一个算法的结构即可以重定义该算法的某些特定步骤。

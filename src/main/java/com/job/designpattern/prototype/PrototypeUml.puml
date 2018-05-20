@@ -1,0 +1,28 @@
+@startuml
+title Prototype
+Interface Cloneable
+class Resume{
+    -name: String
+    -sex: String
+    -age: int
+    -workExperience: WorkExperience
+    -prize: Prize
+    +clone(): Resume
+    +deepClone(): Resume
+}
+class Prize{
+    -name: String
+    +clone(): Prize
+}
+class WorkExperience{
+    -timeArea: String
+    -company: String
+    +clone(): WorkExperience
+}
+
+Cloneable <|.. Resume
+Cloneable <|.. Prize
+Cloneable <|.. WorkExperience
+Resume *-> Prize
+WorkExperience <-* Resume
+@enduml
