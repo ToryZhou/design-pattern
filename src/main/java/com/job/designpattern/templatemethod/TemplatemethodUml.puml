@@ -1,0 +1,27 @@
+@startuml
+
+title Template Method
+
+abstract class TestPaper{
+    +testQuestionOne()
+    +testQuestionTwo()
+    +testQuestionThree()
+    #answerOne(): String
+    #answerTwo(): String
+    #answerThree(): String
+}
+class TestPaperA{
+    #answerOne(): String
+    #answerTwo(): String
+    #answerThree(): String
+}
+class TestPaperB{
+    #answerOne(): String
+    #answerTwo(): String
+    #answerThree(): String
+}
+
+TestPaper <|-- TestPaperA
+TestPaper <|-- TestPaperB
+
+@enduml

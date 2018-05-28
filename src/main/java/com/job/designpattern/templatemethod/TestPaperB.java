@@ -6,15 +6,15 @@ public class TestPaperB extends TestPaper {
     public static final String ANSWER_TWO = "C";
     public static final String ANSWER_THREE = "D";
 
-    public String answerOne() {
+    protected String answerOne() {
         return ANSWER_ONE;
     }
 
-    public String answerTwo() {
+    protected String answerTwo() {
         return ANSWER_TWO;
     }
 
-    public String answerThree() {
+    protected String answerThree() {
         return ANSWER_THREE;
     }
 }

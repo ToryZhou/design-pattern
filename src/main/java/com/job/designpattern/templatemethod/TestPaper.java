@@ -24,10 +24,10 @@ public abstract class TestPaper {
         this.answer3 = TEST_QUESTION_THREE + answerThree();
     }
 
-    public abstract String answerOne();
+    protected abstract String answerOne();
 
-    public abstract String answerTwo();
+    protected abstract String answerTwo();
 
-    public abstract String answerThree();
+    protected abstract String answerThree();
 
 }
