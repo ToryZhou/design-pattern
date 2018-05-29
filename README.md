@@ -41,15 +41,15 @@
 ![Prototype](https://github.com/ToryZhou/design-pattern/raw/master/src/main/java/com/job/designpattern/prototype/PrototypeUml.png)
 
 7. [模板方法模式(Template Method)](https://github.com/ToryZhou/design-pattern/tree/master/src/main/java/com/job/designpattern/templatemethod), 
-定义一个操作中的算法骨架，而将一些步骤延迟到子类中。模板方法使得子类可以不改变一个算法的结构即可以重定义该算法的某些特定步骤。
+定义一个操作中的算法骨架，而将一些步骤延迟到子类中。模板方法使得子类可以不改变一个算法的结构即可以重定义该算法的某些特定步骤。  
 ![Template Method](https://github.com/ToryZhou/design-pattern/raw/master/src/main/java/com/job/designpattern/templatemethod/TemplatemethodUml.png)
 
 8. [外观模式(Facade)](https://github.com/ToryZhou/design-pattern/tree/master/src/main/java/com/job/designpattern/facade), 
-又叫门面模式，为子系统中的一组接口提供一个一致的界面，此模式定义了一个高层接口，这个接口使得这一子系统更加容易使用。
+又叫门面模式，为子系统中的一组接口提供一个一致的界面，此模式定义了一个高层接口，这个接口使得这一子系统更加容易使用。  
 ![Facade](https://github.com/ToryZhou/design-pattern/raw/master/src/main/java/com/job/designpattern/facade/FacadeUml.png)
 
 9. [建造者模式(Builder)](https://github.com/ToryZhou/design-pattern/tree/master/src/main/java/com/job/designpattern/builder), 
-又叫生成器模式，将一个复杂对象的构建与它的表示分离，使得同样的构建过程可以创建不同的表示。
+又叫生成器模式，将一个复杂对象的构建与它的表示分离，使得同样的构建过程可以创建不同的表示。  
 ![Builder](https://github.com/ToryZhou/design-pattern/raw/master/src/main/java/com/job/designpattern/builder/BuilderUml.png)
 
 10. [观察者模式(Observer)](https://github.com/ToryZhou/design-pattern/tree/master/src/main/java/com/job/designpattern/observer), 
