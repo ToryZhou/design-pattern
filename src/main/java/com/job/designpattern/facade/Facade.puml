@@ -1,0 +1,28 @@
+@startuml
+title Facade
+class Fund{
+    -nationalDept: NationalDept
+    -realty: Realty
+    -stock: Stock
+    +buyFund()
+    +sellFund()
+}
+class NationalDept{
+    +buy()
+    +sell()
+}
+class Realty{
+    +buy()
+    +sell()
+}
+class Stock{
+    +buy()
+    +sell()
+}
+
+Fund --> NationalDept
+Fund --> Realty
+Fund --> Stock
+
+
+@enduml

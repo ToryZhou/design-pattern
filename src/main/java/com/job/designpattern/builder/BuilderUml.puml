@@ -1,0 +1,43 @@
+@startuml
+
+title Builder
+
+abstract class PersonBuilder{
+    +buildHead()
+    +getResult(): Person
+}
+
+class PersonDirector{
+    +createPerson()
+}
+
+class PersonFatBuilder{
+    +person: Person
+    +buildHead()
+    +getResult(): Person
+}
+
+class PersonThinBuilder{
+    +person: Person
+    +buildHead()
+    +getResult(): Person
+}
+
+class Person{
+    -head: String
+    -body: String
+    -armLeft: String
+    -armRight: String
+    -legLeft: String
+    -legRight: String
+    +drawHead()
+}
+
+PersonDirector o-> PersonBuilder
+PersonBuilder <|-- PersonFatBuilder
+PersonBuilder <|-- PersonThinBuilder
+
+PersonFatBuilder -> Person
+Person <- PersonThinBuilder
+
+@enduml
