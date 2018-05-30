@@ -54,6 +54,7 @@
 
 10. [观察者模式(Observer)](https://github.com/ToryZhou/design-pattern/tree/master/src/main/java/com/job/designpattern/observer), 
 又叫发布-订阅模式(Publish/Subscribe), 定义了一种一对多的依赖关系，让多个观察者对象同时监听某一个主题对象。这个主题对象在状态发生变化时，会通知所有观察者对象，使它们能够自动更新自己。
+![Observer](https://github.com/ToryZhou/design-pattern/raw/master/src/main/java/com/job/designpattern/observer/ObserverUml.png)
 
 11. [抽象工厂模式(Abstract Factory)](https://github.com/ToryZhou/design-pattern/tree/master/src/main/java/com/job/designpattern/abstractfactory), 
 提供一个创建一系列相关或相互依赖对象的接口，而无需指定它们具体的类。

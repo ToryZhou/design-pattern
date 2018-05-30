@@ -1,0 +1,35 @@
+@startuml
+
+title Observer
+
+abstract class Observer{
+    #name: String
+    #subject: Subject
+    +update()
+}
+class NBAObserver{
+    +status: String
+    +update()
+}
+class StockObserver{
+    +status: String
+    +update()
+}
+
+interface Subject{
+    +inform();
+}
+class Boss{
+    -status: String
+    +inform()
+}
+
+Subject .> Observer
+Observer <|-- NBAObserver
+Observer <|-- StockObserver
+Subject <|.. Boss
+
+NBAObserver .> Subject
+StockObserver .> Subject
+
+@enduml
