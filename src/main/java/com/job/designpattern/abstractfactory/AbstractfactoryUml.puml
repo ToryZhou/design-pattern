@@ -1,0 +1,50 @@
+@startuml
+
+title Abstract Factory
+
+interface IDepartment{
+    #insert()
+    #get(): Department
+}
+interface IFactory
+interface IUser{
+    #insert()
+    #get(): User
+}
+
+class AccessDepartment{
+    +insert()
+    +get(): Department
+}
+class AccessFactory{
+    +createUser(): IUser
+    +createDepartment(): IDepartment
+}
+class AccessUser{
+    +insert()
+    +get(): User
+}
+class SqlServerDepartment{
+    +insert()
+    +get(): Department
+}
+class SqlServerFactory{
+    +createUser(): IUser
+    +createDepartment(): IDepartment
+}
+class SqlServerUser{
+    +insert()
+    +get(): User
+}
+
+IDepartment <|.. AccessDepartment
+IDepartment <|.. SqlServerDepartment
+IFactory <|.. AccessFactory
+IFactory <|.. SqlServerFactory
+IUser <|.. AccessUser
+IUser <|.. SqlServerUser
+AccessFactory ..> AccessDepartment
+AccessFactory ..> AccessUser
+SqlServerFactory ..> SqlServerDepartment
+SqlServerFactory ..> SqlServerUser
+@enduml
