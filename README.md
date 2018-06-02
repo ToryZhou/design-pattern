@@ -61,7 +61,8 @@
 ![Abstract Factory](https://github.com/ToryZhou/design-pattern/raw/master/src/main/java/com/job/designpattern/abstractfactory/AbstractfactoryUml.png)
 
 12. [状态模式(State)](https://github.com/ToryZhou/design-pattern/tree/master/src/main/java/com/job/designpattern/state), 
-当一个对象的内在状态改变时允许改变其行为，这个对象看起来像是改变了其类。
+当一个对象的内在状态改变时允许改变其行为，这个对象看起来像是改变了其类。  
+![State](https://github.com/ToryZhou/design-pattern/raw/master/src/main/java/com/job/designpattern/state/StateUml.png)
 
 13. [适配器模式(Adapter)](https://github.com/ToryZhou/design-pattern/tree/master/src/main/java/com/job/designpattern/adapter), 
 将一个类的接口转换为客户希望的另外一个接口。Adapter模式使得原本由于接口不兼容而不能一起工作的那些类可以在一起工作。

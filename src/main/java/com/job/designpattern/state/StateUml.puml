@@ -1,0 +1,40 @@
+@startuml
+
+title State
+
+abstract class State{
+    +writeProgram()
+}
+class ForenoonState{
+    +writeProgram()
+}
+class NoonState{
+    +writeProgram()
+}
+class AfternoonState{
+    +writeProgram()
+}
+class EveningState{
+    +writeProgram()
+}
+class SleepingState{
+    +writeProgram()
+}
+class RestState{
+    +writeProgram()
+}
+class Work{
+    -currentState: State
+    +writeProgram()
+}
+
+Work <.. State
+Work o--> State
+State <|-- ForenoonState
+State <|-- NoonState
+State <|-- AfternoonState
+State <|-- EveningState
+State <|-- SleepingState
+State <|-- RestState
+
+@enduml
