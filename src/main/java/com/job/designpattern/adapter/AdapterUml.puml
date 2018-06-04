@@ -1,0 +1,33 @@
+@startuml
+
+title Adapter
+
+abstract class Player{
+    #name: String
+    +attack(): Action
+    +defense(): Action
+}
+class ForeignCenter{
+    #name: String
+    +attackForeign(): Action
+    +defenseForeign(): Action
+}
+class Forwards{
+    +attack(): Action
+    +defense(): Action
+}
+class Guards{
+    +attack(): Action
+    +defense(): Action
+}
+class Translator{
+    -foreignCenter: ForeignCenter
+    +attack(): Action
+    +defense(): Action
+}
+
+Player <|-- Forwards
+Player <|-- Guards
+Player <|-- Translator
+ForeignCenter <- Translator
+@enduml
