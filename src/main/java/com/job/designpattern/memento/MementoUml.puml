@@ -1,0 +1,26 @@
+@startuml
+
+title Memento
+
+class GameRole{
+    -vitality: int
+    -attack: int
+    -defense: int
+    +fight()
+    +saveState(): RoleStateMemento
+    +recoveryState()
+}
+class RoleStateCaretaker{
+    -roleStateMemento: RoleStateMemento
+}
+
+class RoleStateMemento{
+    -vitality: int
+    -attack: int
+    -defense: int
+}
+
+GameRole .> RoleStateMemento
+RoleStateMemento <-o RoleStateCaretaker
+
+@enduml
