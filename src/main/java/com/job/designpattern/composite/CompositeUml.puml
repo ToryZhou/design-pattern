@@ -1,26 +1,14 @@
 @startuml
 
-abstract class AbstractList
-abstract AbstractCollection
-interface List
-interface Collection
+abstract class Company
+class ConcreteCompany
+class Duty
+class FinanceCompany
+class HRCompany
 
-List <|-- AbstractList
-Collection <|-- AbstractCollection
+Company <-- ConcreteCompany
+Company <-- FinanceCompany
+Company <-- HRCompany
 
-Collection <|- List
-AbstractCollection <|- AbstractList
-AbstractList <|-- ArrayList
-
-class ArrayList {
-Object[] elementData
-size()
-}
-
-enum TimeUnit {
-DAYS
-HOURS
-MINUTES
-}
 
 @enduml
