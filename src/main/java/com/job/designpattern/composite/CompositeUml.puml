@@ -1,14 +1,36 @@
 @startuml
 
-abstract class Company
-class ConcreteCompany
-class Duty
-class FinanceCompany
-class HRCompany
+title Composite
 
-Company <-- ConcreteCompany
-Company <-- FinanceCompany
-Company <-- HRCompany
+abstract class Company{
+    -name: String
+    +add()
+    +remove()
+    +display()
+    +lineOfDuty()
+}
+class FinanceCompany{
+    +add()
+    +remove()
+    +display()
+    +lineOfDuty()
+}
+class HRCompany{
+    +add()
+    +remove()
+    +display()
+    +lineOfDuty()
+}
+class ConcreteCompany{
+    +add()
+    +remove()
+    +display()
+    +lineOfDuty()
+}
 
+Company <|-- FinanceCompany
+Company <|-- HRCompany
+Company <|-- ConcreteCompany
 
+Company <--o ConcreteCompany
 @enduml
