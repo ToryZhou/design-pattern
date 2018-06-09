@@ -1,0 +1,48 @@
+@startuml
+
+title Iterator
+
+abstract class Aggregate{
+    +createIterator(): Iterator
+}
+abstract class Iterator{
+    +first(): Object
+    +next(): Object
+    +isDone(): boolean
+    +first(): currentItem
+    +current(): int
+}
+class ConcreteAggregate{
+    +createIterator(): Iterator
+}
+class ConcreteIterator{
+    -concreteAggregate: ConcreteAggregate
+    -current: int
+    +first(): Object
+    +next(): Object
+    +isDone(): boolean
+    +first(): currentItem
+    +current(): int
+}
+class ConcreteIteratorDesc{
+    -concreteAggregate: ConcreteAggregate
+    -current: int
+    +first(): Object
+    +next(): Object
+    +isDone(): boolean
+    +first(): currentItem
+    +current(): int
+}
+
+Iterator <|-- ConcreteIterator
+Iterator <|-- ConcreteIteratorDesc
+
+Aggregate <|-- ConcreteAggregate
+
+ConcreteIterator --> ConcreteAggregate
+ConcreteAggregate ..> ConcreteIterator
+
+ConcreteIteratorDesc --> ConcreteAggregate
+ConcreteAggregate ..> ConcreteIteratorDesc
+
+@enduml

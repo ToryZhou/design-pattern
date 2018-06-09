@@ -1,7 +1,5 @@
 package com.job.designpattern.iterator;
 
-import lombok.Getter;
-
 public class ConcreteIterator extends Iterator {
     private ConcreteAggregate concreteAggregate;
 
