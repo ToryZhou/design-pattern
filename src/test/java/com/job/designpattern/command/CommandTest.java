@@ -10,12 +10,12 @@ public class CommandTest {
         Barbecuer barbecuer = new Barbecuer();
         BakeMuttonCommand bakeMuttonCommand1 = new BakeMuttonCommand(barbecuer);
         BakeMuttonCommand bakeMuttonCommand2 = new BakeMuttonCommand(barbecuer);
-        BakeChichenWingCommand bakeChichenWingCommand = new BakeChichenWingCommand(barbecuer);
+        BakeChickenWingCommand bakeChickenWingCommand = new BakeChickenWingCommand(barbecuer);
 
         Waiter waiter = new Waiter();
         waiter.setOrder(bakeMuttonCommand1);
         waiter.setOrder(bakeMuttonCommand2);
-        waiter.setOrder(bakeChichenWingCommand);
+        waiter.setOrder(bakeChickenWingCommand);
         waiter.cancelOrder(bakeMuttonCommand2);
 
         waiter.inform();

@@ -8,7 +8,7 @@ public class Waiter {
     private List<Command> orders = new ArrayList<>();
 
     public void setOrder(Command command) {
-        if (BakeChichenWingCommand.class.getSimpleName().equals(command.getClass().getSimpleName())) {
+        if (BakeChickenWingCommand.class.getSimpleName().equals(command.getClass().getSimpleName())) {
             CommandData.getInstance().getLogList().add("No chicken wing");
         } else {
             orders.add(command);

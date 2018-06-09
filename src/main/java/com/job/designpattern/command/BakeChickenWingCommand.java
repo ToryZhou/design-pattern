@@ -1,7 +1,7 @@
 package com.job.designpattern.command;
 
-public class BakeChichenWingCommand extends Command {
-    public BakeChichenWingCommand(Barbecuer barbecuer) {
+public class BakeChickenWingCommand extends Command {
+    public BakeChickenWingCommand(Barbecuer barbecuer) {
         super(barbecuer);
     }
 

@@ -1,0 +1,33 @@
+@startuml
+
+title bridge
+
+abstract class HandsetBrand{
+    -handsetSoft: HandsetSoft
+    +run()
+}
+abstract class HandsetSoft{
+    +run()
+}
+
+class HandsetBrandM{
+    +run()
+}
+class HandsetBrandN{
+    +run()
+}
+class HandsetAddressList{
+    +run()
+}
+class HandsetGame{
+    +run()
+}
+
+HandsetBrand <|-- HandsetBrandM
+HandsetBrand <|-- HandsetBrandN
+
+HandsetSoft <|-- HandsetAddressList
+HandsetSoft <|-- HandsetGame
+
+HandsetBrand o- HandsetSoft
+@enduml

@@ -1,0 +1,29 @@
+@startuml
+title Command
+
+class Waiter{
+    -orders: List<Command>
+    +inform()
+}
+abstract class Command{
+    #barbecuer: Barbecuer
+    +executeCommand()
+}
+class BakeChickenWingCommand{
+    +executeCommand()
+}
+class BakeMuttonCommand{
+    +executeCommand()
+}
+class Barbecuer{
+    +bakeMutton()
+    +bakeChickenWing()
+}
+
+Waiter o-> Command
+Command <|-- BakeChickenWingCommand
+Command <|-- BakeMuttonCommand
+
+BakeChickenWingCommand --> Barbecuer
+BakeMuttonCommand --> Barbecuer
+@enduml

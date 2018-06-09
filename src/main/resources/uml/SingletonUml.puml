@@ -1,26 +1,18 @@
 @startuml
 
-class Hungry
-abstract AbstractCollection
-interface List
-interface Collection
+title Singleton
 
-List <|-- AbstractList
-Collection <|-- AbstractCollection
-
-Collection <|- List
-AbstractCollection <|- AbstractList
-AbstractList <|-- ArrayList
-
-class ArrayList {
-Object[] elementData
-size()
+class Hungry{
+    -hungry: Hungry
+    -name
+    -Hungry()
+    +getInstance(): Hungry
 }
-
-enum TimeUnit {
-DAYS
-HOURS
-MINUTES
+class Lazy{
+    -lazy
+    -name
+    -Lazy()
+    +getInstance(): Lazy
 }
 
 @enduml
