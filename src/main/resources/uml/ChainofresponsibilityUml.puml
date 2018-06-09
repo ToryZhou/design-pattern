@@ -1,0 +1,34 @@
+@startuml
+title Chain of Responsibility
+abstract class Manager{
+    #name: String
+    #superior: Manager
+    +setSuperior()
+    +requestApplications()
+}
+class CommonManager{
+    +requestApplications()
+}
+class Majordomo{
+    +requestApplications()
+}
+class GeneralManager{
+    +requestApplications()
+}
+
+class Request{
+    -requestType: String
+    -requestContent: String
+    -number: int
+}
+
+Manager <-o Manager
+Manager <|-- CommonManager
+Manager <|-- Majordomo
+Manager <|-- GeneralManager
+
+CommonManager ..> Request
+Majordomo ..> Request
+GeneralManager ..> Request
+
+@enduml
