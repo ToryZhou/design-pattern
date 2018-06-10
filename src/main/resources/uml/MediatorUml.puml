@@ -1,0 +1,37 @@
+@startuml
+
+title Mediator
+
+abstract class Country{
+    #unitedNations: UnitedNations
+    +declare()
+    +getMessage()
+}
+abstract class UnitedNations{
+    +declare()
+}
+class Iran{
+    +declare()
+    +getMessage()
+}
+class USA{
+    +declare()
+    +getMessage()
+}
+class UnitedNationsSecurityCouncil{
+    -USA: usa
+    -iran: Iran
+    +declare()
+}
+
+Country <|-- Iran
+Country <|-- USA
+
+UnitedNations <|-- UnitedNationsSecurityCouncil
+
+UnitedNationsSecurityCouncil --> Iran
+UnitedNationsSecurityCouncil --> USA
+
+UnitedNations <- Country
+
+@enduml
