@@ -1,0 +1,25 @@
+@startuml
+
+title Flywight
+
+abstract class Website{
+    +use()
+}
+class WebsiteFactory{
+    -hashtable: Hashtable
+    +getWebsiteCategory(): Website
+    +getWebsiteCount(): int
+}
+class ConcreteWebsite{
+    -name: String
+    +use()
+}
+class User{
+    -name: String
+}
+
+
+Website <|-- ConcreteWebsite
+User <. Website
+Website <-o WebsiteFactory
+@enduml
