@@ -1,0 +1,49 @@
+@startuml
+
+title Visitor
+
+abstract class Action{
+    +getManConclusion()
+    +getWomanConclusion()
+}
+abstract class Person{
+    +accept()
+}
+class Man{
+    +accept()
+}
+class Woman{
+    +accept()
+}
+class Success{
+    +getManConclusion()
+    +getWomanConclusion()
+}
+class Failing{
+    +getManConclusion()
+    +getWomanConclusion()
+}
+class Amativeness{
+    +getManConclusion()
+    +getWomanConclusion()
+}
+class Marriage{
+    +getManConclusion()
+    +getWomanConclusion()
+}
+class ObjectStructure{
+    -personList: List<Person>
+    +attach()
+    +detach()
+    +display()
+}
+
+Action <|-- Amativeness
+Action <|-- Marriage
+Action <|-- Success
+Action <|-- Failing
+ObjectStructure -> Person
+Person <|-- Man
+Person <|-- Woman
+
+@enduml

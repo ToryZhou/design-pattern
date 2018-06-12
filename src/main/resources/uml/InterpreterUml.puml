@@ -1,0 +1,27 @@
+@startuml
+
+title Interpreter
+
+abstract class Expression{
+    +interpret()
+    +execute()
+}
+class Note{
+    +execute()
+}
+class Scale{
+    +execute()
+}
+class Speed{
+    +execute()
+}
+class PlayContext{
+    -text: String
+}
+
+Expression <|-- Note
+Expression <|-- Scale
+Expression <|-- Speed
+Expression .> PlayContext
+
+@enduml
