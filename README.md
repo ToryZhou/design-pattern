@@ -117,4 +117,7 @@
 UML类图使用 Idea PlantUML plugin
 同时需要下载安装 [graphviz](https://graphviz.gitlab.io/download/)
 需要安装graphviz到默认目录 [参考说明](http://plantuml.com/graphviz-dot)
+
+ubuntu需要
+sudo apt install graphviz
 ```
